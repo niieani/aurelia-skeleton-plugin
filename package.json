@@ -19,7 +19,8 @@
     "url": "http://github.com/niieani/aurelia-plugin-skeleton"
   },
   "scripts": {
-    "test": "ava test"
+    "test": "./node_modules/.bin/ava test",
+    "postinstall": "./node_modules/.bin/typings install"
   },
   "devDependencies": {
     "ava": "^0.15.1",
