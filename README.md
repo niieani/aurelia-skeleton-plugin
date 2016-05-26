@@ -21,12 +21,20 @@ To build the plugin, follow these steps.
   ```shell
   gulp watch
   ```
-5. Link your Aurelia app for local development and testing:
+5. Link your plugin with an Aurelia app for local development and testing:
 
   ```shell
   npm link
-  ## now change directory to your Aurelia app ##
+  
+  # at this point, change the directory to your Aurelia app, e.g.
+  cd ../aurelia-skeleton-navigation
+  
+  # if using Webpack, simply run:
   npm link aurelia-skeleton-plugin
+  
+  # if using JSPM you will need to re-run this
+  # after every change you make to your code:
+  jspm link -y aurelia-skeleton-plugin
   ```
 6. Make your Aurelia app load the plugin by adding the following line to the `configure` function in the `main.js` file of your `src` folder, e.g.
 
