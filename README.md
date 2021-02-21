@@ -1,3 +1,5 @@
+# NO LONGER MAINTAINED. PLEASE DO NOT USE.
+
 # aurelia-skeleton-plugin (typescript)
 
 ## Building The Plugin
